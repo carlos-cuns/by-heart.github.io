@@ -12,4 +12,4 @@ ReactDOM.render(
 const domContainer = 
 document.querySelector('#flashcard_container');
 const root = ReactDOM.createRoot(domContainer);
-root.render(e())
+//root.render(e())
