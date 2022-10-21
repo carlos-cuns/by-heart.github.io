@@ -8,3 +8,8 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const domContainer = 
+document.querySelector('#flashcard_container');
+const root = ReactDOM.createRoot(domContainer);
+root.render(e())
