@@ -55,12 +55,12 @@ img{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 35px;
-    color:#fc3c3c;
+    color:#fafafa;
     font-style: oblique;
     font-size: 50px;
 }
 .description{
-    font-style: italic;
+    font-style: normal;
 }
 .main_button{
     display: inline-block;
