@@ -18,9 +18,8 @@ var timer = setInterval(function() {
 	// Display the result in timer div
 	document.getElementById("timer").innerHTML = hours + "h "
 		+ minutes + "m " + seconds + "s ";
-
 	// If the count down is finished, write some text
-	if (Date().getTime() == countDownDate) {
+	if (now == countDownDate) {
    	clearInterval(x);
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
