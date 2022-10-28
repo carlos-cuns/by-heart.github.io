@@ -1,5 +1,5 @@
 // Update later to make this so a timer is set for 5/10/appropriate interval
-var countDownDate = new Date("Jan 5, 2023 15:37:25").getTime();
+var countDownDate = new Date.getTime() + 300000;
 
 // Update the count down every second
 var timer = setInterval(function() {
