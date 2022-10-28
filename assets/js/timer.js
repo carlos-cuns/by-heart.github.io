@@ -19,7 +19,7 @@ var timer = setInterval(function() {
 	document.getElementById("timer").innerHTML = hours + "h "
 		+ minutes + "m " + seconds + "s ";
 	// If the count down is finished, write some text
-	if (now == countDownDate) {
+	if (now >= countDownDate) {
    	clearInterval(x);
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
