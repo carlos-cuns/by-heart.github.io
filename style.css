@@ -42,15 +42,19 @@ img{
     max-width: 80%;
 }
 .logo{
-    justify-items: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
     padding-right: 60px;
     max-width: 100%;
+    padding-left: 20px;
 }
 .text{
     font-size: x-large;
     margin-top: 110px;
     margin-bottom: 100px;
     max-width: 100%;
+    padding-right: 20px;
 }
 .title{
     padding-top: 20px;
@@ -59,9 +63,6 @@ img{
     color:#ffffff;
     font-style: normal;
     font-size: 50px;
-}
-.description{
-    font-style: normal;
 }
 .main_button{
     display: inline-block;
@@ -72,7 +73,16 @@ img{
     font-weight: bold;
     transition: opacity .15s;
 }
+.main_button#by-heart{
+    font-size: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
 .main_button.large{
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 25px;
     padding-left: 50px;
     padding-right: 50px;
@@ -92,13 +102,11 @@ button:hover{
     opacity: .8;
     cursor: pointer;
 }
-.button{
-    margin-left: 60px;
-    margin-right: 60px;
-    display: inline-block;
-    max-block-size: 80%;
-}
-.buttons{
+.button_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-top: 20px;
     border-radius: 10px;
     background-color: #1a2849;
