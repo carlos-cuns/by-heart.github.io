@@ -20,7 +20,7 @@ var timer = setInterval(function() {
 		+ minutes + "m " + seconds + "s ";
 
 	// If the count down is finished, write some text
-	if (distance < 0) {
+	if (diff < 0) {
    	clearInterval(x);
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
