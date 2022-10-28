@@ -19,9 +19,8 @@ var timer = setInterval(function() {
 	document.getElementById("timer").innerHTML = hours + "h "
 		+ minutes + "m " + seconds + "s ";
 
-	diff = countDownDate - now;
 	// If the count down is finished, write some text
-	if (diff < 0) {
+	if (Date().getTime() == countDownDate) {
    	clearInterval(x);
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
