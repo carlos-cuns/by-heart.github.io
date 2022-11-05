@@ -1,8 +1,6 @@
 // Update later to make this so a timer is set for 5/10/appropriate interval
-var countDownDate = new Date().getTime() + 300000;
-
-// Update the count down every second
-var timer = setInterval(function() {
+const countDownDate = new Date().getTime() + 300000;
+var countdown  = function() {
 
 	// Get the current date and time
 	var now = new Date().getTime();
@@ -20,7 +18,9 @@ var timer = setInterval(function() {
 		+ minutes + "m " + seconds + "s ";
 	// If the count down is finished, write some text
 	if (now >= countDownDate) {
-   	clearInterval(x);
+   	clearInterval(countdown);
    	document.getElementById("timer").innerHTML = "Time to start studying again!";
   }
-}, 1000);
+}
+// Update the count down every second
+var timer = setInterval(countdown, 1000);
