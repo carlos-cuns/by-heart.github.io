@@ -5,6 +5,9 @@
     max-width: 100%;
     scroll-behavior: smooth;
 }
+html{
+    height: -webkit-fill-available;
+}
 .fa-brands{
     color:#fbfbfb;
 }
