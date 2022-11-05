@@ -13,6 +13,9 @@ html{
     color:#fbfbfb;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #0f4471;
 }
 .topbar{
