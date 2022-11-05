@@ -1,5 +1,7 @@
 const cardtext = document.getElementsByClassName("cardtext")[0];
 const flashcard = document.getElementById("flashcard");
+const front = document.getElementsByClassName("front")[0];
+const back = document.getElementsByClassName("back")[0];
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
@@ -9,20 +11,20 @@ let contentArray = localStorage.getItem('items') ? JSON.parse(localStorage.getIt
 contentArray.forEach(divMaker);
 
 function divMaker(text) {
-	var div = document.createElement("div");
+	//var div = flashcard;
 	var p_question = document.createElement("p");
 	var p_answer = document.createElement("p");
 
-	div.className = 'flashcard-container';
+	//div.className = 'flashcard-container';
 	p_question.innerHTML = text.my_question;
 
-	p_answer.setAttribute('style', "display: none");
+	//p_answer.setAttribute('style', "display: none;");
 	p_answer.innerHTML = text.my_answer;
 
-	div.appendChild(p_question);
-	div.appendChild(p_answer);
+	front.appendChild(p_question);
+	back.appendChild(p_answer);
 
-	div.addEventListener("click", function () {
+	/*flashcard.addEventListener("click", function () {
 		if (p_answer.style.display == "none") {
 			p_answer.style.display = "block";
 			p_question.style.display = "none";
@@ -31,9 +33,9 @@ function divMaker(text) {
 			p_answer.style.display = "none";
 			p_question.style.display = "block";
 		}
-	});
+	});*/
 
-	cardtext.appendChild(div);
+	//flashcard.appendChild(div);
 }
 
 flashcard.addEventListener("click",flipCard);

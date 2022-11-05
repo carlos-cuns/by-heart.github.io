@@ -205,8 +205,7 @@ td:hover{
     max-width: 100%;
 }
 #flashcard{
-    display: flex;
-    flex-direction: column;
+    position: relative;
     background-color: lightgray;
     height: 300px;
     width: 550px;
@@ -219,19 +218,30 @@ td:hover{
     word-wrap: break-word;
     transform-style: preserve-3d;
     transition: all 0.4s ease;
-}
-.cardtext{
-    font-size: x-large;
-    margin: auto;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    perspective: 1000px;
+
 }
 .front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: lightgray;
     backface-visibility: hidden;
+    text-align: center;
 }
 .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-color: lightgray;
     backface-visibility: hidden;
+    text-align: center;
     transform: rotateY(180deg);
 }
 .flipCard {
