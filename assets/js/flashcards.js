@@ -1,5 +1,5 @@
-const flashcards = document.getElementsByClassName("cardtext")[0];
-const flashcard = document.getElementsByClassName("flashcard");
+const cardtext = document.getElementsByClassName("cardtext")[0];
+const flashcard = document.getElementById("flashcard");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
@@ -33,13 +33,19 @@ function divMaker(text) {
 		}
 	});
 
-	flashcards.appendChild(div);
+	cardtext.appendChild(div);
+}
+
+flashcard.addEventListener("click",flipCard);
+
+function flipCard() {
+	flashcard.classList.toggle("flipCard")
 }
 
 // Clear out all cards
 function deleteDeck() {
 	localStorage.clear();
-	flashcards.innerHTML = "";
+	cardtext.innerHTML = "";
 	contentArray = [];
 }
 
