@@ -1,4 +1,5 @@
 const flashcards = document.getElementsByClassName("cardtext")[0];
+const flashcard = document.getElementsByClassName("flashcard");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
@@ -13,10 +14,9 @@ function divMaker(text) {
 	var p_answer = document.createElement("p");
 
 	div.className = 'flashcard-container';
-	p_question.setAttribute('style', "padding: 15px margin-top: 30px");
 	p_question.innerHTML = text.my_question;
 
-	p_answer.setAttribute('style', "text-align: center; display: none");
+	p_answer.setAttribute('style', "display: none");
 	p_answer.innerHTML = text.my_answer;
 
 	div.appendChild(p_question);
