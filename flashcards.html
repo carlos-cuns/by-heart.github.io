@@ -26,43 +26,14 @@
           <textarea id="question"></textarea>
           <label for="answer">Definition: </label>
           <textarea id="answer"></textarea>
-        </div>
-        <div class="setbuttons">
-          <button class="main_button medium">Add Card</button>
-          <button class="main_button medium">Delete Deck</button>
+		  <div class="setbuttons">
+			<button class="main_button medium" onclick = "addCard()">Add Card</button>
+			<button class="main_button medium" onclick = "deleteDeck()">Delete Deck</button>
+		  </div>
         </div>
       </div>
     </div>
-    <div class="section" id="Flashcard">
-      <h1>Your Flashcards</h1>
-      <div class="flash_body">
-        <div class="leftarrow">
-          <button class="arrow_button">
-            <i class="fa-solid fa-caret-left fa-6x"></i>
-          </button>
-        </div>
-        <div class="flashcard">
-          <h3>Flashcard</h3>
-          <div class="cardtext">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rerum
-              quisquam, deleniti maiores assumenda sit saepe?
-            </p>
-          </div>
-          <p>click to flip</p>
-        </div>
-        <div class="rightarrow">
-          <button class="arrow_button">
-            <i class="fa-solid fa-caret-right fa-6x"></i>
-          </button>
-        </div>
-      </div>
-      <div class="timer">
-        <p id="timer" />
-      </div>
-      <div class="button_row">
-        <button class="main_button large">Edit Card</button>
-      </div>
-    </div>
+    <div class="flashcards"></div>
+    <script src="assets/js/flashcards.js"></script>
   </body>
 </html>
