@@ -42,7 +42,6 @@ img{
     margin: 20px;
     border: 10px solid #0f4471;
     border-radius: 50%;
-    max-width: 80%;
 }
 .logo{
     display: flex;
