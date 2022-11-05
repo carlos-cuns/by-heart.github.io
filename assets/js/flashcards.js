@@ -1,4 +1,4 @@
-const flashcards = document.getElementsByClassName("flashcards")[0];
+const flashcards = document.getElementsByClassName("cardtext")[0];
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
