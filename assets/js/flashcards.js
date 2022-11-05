@@ -9,27 +9,27 @@ contentArray.forEach(divMaker);
 
 function divMaker(text) {
 	var div = document.createElement("div");
-	var h3_question = document.createElement("h3");
-	var h3_answer = document.createElement("h3");
+	var p_question = document.createElement("p");
+	var p_answer = document.createElement("p");
 
 	div.className = 'flashcard-container';
-	h3_question.setAttribute('style', "padding: 15px margin-top: 30px");
-	h3_question.innerHTML = text.my_question;
+	p_question.setAttribute('style', "padding: 15px margin-top: 30px");
+	p_question.innerHTML = text.my_question;
 
-	h3_answer.setAttribute('style', "text-align: center; display: none");
-	h3_answer.innerHTML = text.my_answer;
+	p_answer.setAttribute('style', "text-align: center; display: none");
+	p_answer.innerHTML = text.my_answer;
 
-	div.appendChild(h3_question);
-	div.appendChild(h3_answer);
+	div.appendChild(p_question);
+	div.appendChild(p_answer);
 
 	div.addEventListener("click", function () {
-		if (h3_answer.style.display == "none") {
-			h3_answer.style.display = "block";
-			h3_question.style.display = "none";
+		if (p_answer.style.display == "none") {
+			p_answer.style.display = "block";
+			p_question.style.display = "none";
 		}
 		else {
-			h3_answer.style.display = "none";
-			h3_question.style.display = "block";
+			p_answer.style.display = "none";
+			p_question.style.display = "block";
 		}
 	});
 

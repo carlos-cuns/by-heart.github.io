@@ -26,14 +26,26 @@
           <textarea id="question"></textarea>
           <label for="answer">Definition: </label>
           <textarea id="answer"></textarea>
-		  <div class="setbuttons">
-			<button class="main_button medium" onclick = "addCard()">Add Card</button>
-			<button class="main_button medium" onclick = "deleteDeck()">Delete Deck</button>
-		  </div>
+          <div class="setbuttons">
+            <button class="main_button medium" onclick="addCard()">
+              Add Card
+            </button>
+            <button class="main_button medium" onclick="deleteDeck()">
+              Delete Deck
+            </button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="flashcards"></div>
+    <div class="section" id="Flashcard">
+      <h1>Your Flashcards</h1>
+      <div class="flashcard">
+        <div class="cardtext"></div>
+      </div>
+      <div class="timer">
+        <p id="timer" />
+      </div>
+    </div>
     <script src="assets/js/flashcards.js"></script>
   </body>
 </html>
