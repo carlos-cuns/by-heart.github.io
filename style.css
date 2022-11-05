@@ -162,7 +162,7 @@ td:hover{
     cursor: pointer;
 }
 .setbody{
-    max-width: 100%;
+    width: 100%;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -223,7 +223,7 @@ td:hover{
 }
 .front{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: absolute;
     width: 100%;
@@ -234,7 +234,7 @@ td:hover{
 }
 .back{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     position: absolute;
     width: 100%;

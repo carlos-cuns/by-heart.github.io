@@ -47,7 +47,7 @@ function flipCard() {
 // Clear out all cards
 function deleteDeck() {
 	localStorage.clear();
-	cardtext.innerHTML = "";
+	flashcard.innerHTML = "";
 	contentArray = [];
 }
 
