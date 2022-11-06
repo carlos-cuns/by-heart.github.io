@@ -57,10 +57,27 @@ img{
     max-width: 70%;
 
 }
-.method{
+.our_method{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+a:link { 
+    color: #fbfbfb;}
+a:visited {
+    color: #fbfbfb;
+}
+a:hover { 
+    color: #fbfbfb;
+}
+a:active { 
+    color: #fbfbfb; 
+}
+.knights{
+    font-size: 1rem;
 }
 .title{
     padding-top: 20px;
