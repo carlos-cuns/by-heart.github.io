@@ -236,7 +236,7 @@ td:hover{
     transform-style: preserve-3d;
     transition: all 0.4s ease;
     perspective: 1000px;
-
+    margin: 30px;
 }
 .front{
     display: flex;
@@ -288,4 +288,7 @@ td:hover{
     padding: 20px;
     font-weight: bold;
 }
-
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
